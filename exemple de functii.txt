@@ -1,0 +1,59 @@
+http://localhost:5050/getTeams  (afiseaza toate echipele) 
+http://localhost:5050/getPiloti  (afiseaza toti pilotii)
+http://localhost:5050/getPoints/:id_Pilot (locul pe care se afla pilotul)
+http://localhost:5050/addPlayer (adauga un pilot)
+http://localhost:5050/editPilot/:idPilot (editeaza locul unui pilot)
+http://localhost:5050/deletePlayer/:_id (stergere pilot)
+http://localhost:5050/getPlayers/:_id_echipa (afisare piloti dintr-o echipa)
+
+exemplu de element din Echipa
+{
+  "_id": {
+    "$oid": "6602a7a655ccf87dcb6f6c60"
+  },
+  "_id_echipa": {
+    "$oid": "6602a7a655ccf87dcb6f6c60"
+  },
+  "Name": "Ferrari",
+  "Number_points_in_constructor_championship": {
+    "$numberLong": "93"
+  },
+  "Constructor_de_motoare": true,
+  "Data_ultima_victorie": {
+    "$date": "2024-03-24T21:00:00.000Z"
+  },
+  "Curse_castigate": [
+    "0",
+    "0",
+    "1"
+  ],
+  "Number_of_Championship_win": {
+    "$numberLong": "15"
+  },
+  "Sefi departament": [
+    {
+      "sef_echipa": "Vaseur",
+      "campionate_participate": "2"
+    },
+    {
+      "sef_motor": "Bonito",
+      "campionate_participate": "3"
+    }
+  ]
+}
+exemplu de element din Piloti
+{
+  "_id": {
+    "$oid": "6605d33c495cb0a71b6e80b5"
+  },
+  "_id_Pilot": {
+    "$oid": "6605d33c495cb0a71b6e80b5"
+  },
+  "Nume": "Verstappen",
+  "Prenume": "Max",
+  "Loc": "1",
+  "Campionate_castigate": 3,
+  "team": {
+    "$oid": "6602b37155ccf87dcb6f6c62"
+  }
+}
