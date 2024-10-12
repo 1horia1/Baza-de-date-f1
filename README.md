@@ -4,4 +4,3 @@ Totodata aveti nevoie de instalarea node js care va va crea folderul node_module
 fisierele public , src ,gitignore package  ,package-lock , README plus ce este generat node.js , trebuie puse intr-un folder
 numite aplicatie_bd
 
-Va las mai jos versiunea .rar daca nu va descuracati
